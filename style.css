@@ -1,0 +1,116 @@
+html, 
+body {
+    min-height: 100%;
+}
+html {
+     height: 100%;
+}
+body{
+     min-height: 100%;
+     font-family: 'Poppins', sans-serif;
+     font-size: 16px;
+     background-color: hsl(0, 100%, 74%) ;
+}
+.font-weight-700{
+     font-weight: 700;
+}
+.font-weight-600{
+     font-weight: 600;
+}
+.font-weight-500{
+     font-weight: 500;
+}
+.has-text-gray{
+     color:hsl(246, 25%, 77%);
+}
+.has-text-red{
+     color:hsl(0, 100%, 74%);
+}
+.box-form{
+     box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.box-form a:hover{
+     color: hsl(0, 100%, 74%);
+}
+.box-try-free{
+     font-family: 'Poppins', sans-serif;
+     text-align: center;
+     width: 100%;
+     background-color: hsl(248, 32%, 49%);
+     padding: 1rem 0 1rem 0;
+     border-color: transparent;
+     border-radius: 6px;
+     box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.button-claim-free{
+     font-family: 'Poppins', sans-serif;
+     font-size: 1rem;
+     width: 100%;
+     background-color: hsl(154, 59%, 51%);
+     color: white;
+     padding: 1rem 0 1rem 0;
+     border-color: transparent;
+     border-radius: 6px;
+     box-shadow: inset 0em -.2em rgba(0, 0, 0, 0.1);
+     cursor: pointer;
+}
+.input-form{
+     height: 50px;
+     padding-left: 2em;
+     padding-right: 2.5em;
+     box-shadow: none;
+     font-family: 'Poppins', sans-serif;
+     font-size: .9rem;
+     font-weight: 600;
+     color: hsl(249, 10%, 26%);
+}
+.input-form::placeholder {
+     font-family: 'Poppins', sans-serif;
+     font-size: .9rem;
+     font-weight: 600;
+     color: #828284;
+}
+.input-form:focus {
+     border-color: hsl(249, 10%, 26%);
+     box-shadow: none;
+}
+.input-is-danger{
+     border: 2px solid hsl(0, 100%, 74%);
+}
+.input-is-danger:hover{
+     border: 2px solid hsl(0, 100%, 74%);
+}
+.input-is-danger::placeholder{
+     font-family: 'Poppins', sans-serif;
+     font-size: .9rem;
+     font-weight: 600;
+     color: hsl(0, 100%, 74%);
+}
+
+@media only screen and (max-width: 768px) {
+     body{
+          background-image: url('images/bg-intro-mobile.png');
+          background-position: center top;
+          background-size: auto;
+          background-repeat: no-repeat;
+     }
+     .heading-left{
+          text-align: center;
+     }
+     .heading-title{
+          line-height: 2rem;
+     }
+}
+
+@media only screen and (min-width: 769px) {
+     body{
+          background-image: url('images/bg-intro-desktop.png');
+          background-position: center top;
+          background-size: auto;
+          background-repeat: no-repeat;
+     }
+     .heading-title{
+          line-height: 3.5rem;
+     }
+}
+   

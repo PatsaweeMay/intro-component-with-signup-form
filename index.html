@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Intro component with signup</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <link href="/font/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+     <section class="section">
+          <div class="container">
+               <div class="columns">
+                    <div class="column is-flex is-align-items-center is-justify-content-center">
+                         <div>
+                              <p class="title is-size-4-mobile is-size-2-tablet is-size-1-desktop has-text-white font-weight-700 heading-left heading-title">
+                                   Learn to code by <br> watching others
+                              </p>
+                              <p class="subtitle is-size-6 has-text-white pt-5 heading-left">
+                                   See how experienced developers solve problems in real-time. <br>
+                                   Watching scripted tutorials is great. but understanding how <br>
+                                   developers think is invaluable.
+                              </p>
+                         </div>
+                    </div>
+                    <div class="column">
+                         <div class="box-try-free mt-5">
+                              <p class="has-text-grey-lighter px-6">
+                                   <span class="font-weight-600 has-text-white">Try it free 7 days</span>
+                                   then $20/mo. thereafter
+                              </p>
+                         </div>
+                         <div class="box box-form mt-5">
+                              <div class="columns is-mobile is-flex is-justify-content-center pt-5 pb-5">
+                                   <div class="column is-full-mobile is-11-desktop">
+                                        <form id="form-free" action="https://httpbin.org/post" method="POST">
+                                             <div class="field pb-2">
+                                                  <div class="control has-icons-right">
+                                                       <input id="input-first-name" name="first_name"
+                                                            class="input input-form" type="text"
+                                                            placeholder="First Name">
+                                                       <span class="icon is-small is-right pt-2 is-hidden">
+                                                            <i class="fas fa-exclamation-circle has-text-red"></i>
+                                                       </span>
+                                                  </div>
+                                                  <p id="error-first-name"
+                                                       class="help is-danger has-text-right is-hidden"><i>First Name
+                                                            cannot be empty</i></p>
+                                             </div>
+                                             <div class="field pb-2">
+                                                  <div class="control has-icons-right">
+                                                       <input id="input-last-name" name="last_name"
+                                                            class="input input-form" type="text"
+                                                            placeholder="Last Name">
+                                                       <span class="icon is-small is-right pt-2 is-hidden">
+                                                            <i class="fas fa-exclamation-circle has-text-red"></i>
+                                                       </span>
+                                                  </div>
+                                                  <p id="error-last-name"
+                                                       class="help is-danger has-text-right is-hidden"><i>Last Name
+                                                            cannot be empty</i></p>
+                                             </div>
+                                             <div class="field pb-2">
+                                                  <div class="control has-icons-right">
+                                                       <input id="input-email" name="email" class="input input-form"
+                                                            type="text" placeholder="Email Address">
+                                                       <span class="icon is-small is-right pt-2 is-hidden">
+                                                            <i class="fas fa-exclamation-circle has-text-red"></i>
+                                                       </span>
+                                                  </div>
+                                                  <p id="error-email" class="help is-danger has-text-right is-hidden">
+                                                       <i>Looks like this is not an email</i>
+                                                  </p>
+                                             </div>
+                                             <div class="field pb-2">
+                                                  <div class="control has-icons-right">
+                                                       <input id="input-password" name="password"
+                                                            class="input input-form" type="password"
+                                                            placeholder="Password">
+                                                       <span class="icon is-small is-right pt-2 is-hidden">
+                                                            <i class="fas fa-exclamation-circle has-text-red"></i>
+                                                       </span>
+                                                  </div>
+                                                  <p id="error-password"
+                                                       class="help is-danger has-text-right is-hidden"><i>Password
+                                                            cannot be empty</i></p>
+                                             </div>
+                                             <div class="field pb-2">
+                                                  <div class="control">
+                                                       <button type="submit"
+                                                            class="button-claim-free font-weight-500">CLAIM YOUR FREE
+                                                            TRIAL</button>
+                                                  </div>
+                                             </div>
+                                        </form>
+                                        <p class="is-size-7 pt-4 px-3 has-text-centered has-text-gray">
+                                             By clicking the button, you are agreeing to our
+                                             <a class="has-text-red font-weight-600">Terms and Services</a>
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div><!-- end container -->
+     </section>
+
+     <footer>
+          <p class="has-text-centered has-text-white pt-6 pb-6">
+               Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+               Coded by <a href="https://patsaweemay.github.io/">Patsawee Tangtrongtorkarn</a>.
+          </p>
+     </footer>
+
+
+     <script src="app.js"></script>
+</body>
+
+</html>
