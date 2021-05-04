@@ -35,24 +35,30 @@ function hideEmailError(){
 function checkInput(input, error, icon){
      if(input.value === ''){
           showError(input, error, icon)
-          return false;
+          return false
      } else {
           hideError(input, error, icon)
-          return true;
+          return true
      }
 }
 
 function checkEmail(input, error, icon){
      let emailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-     if(input.value === '' || !emailFormat.test(input.value)){
+     if(input.value === ''){
+          errorEmail.innerHTML = '<i>Email cannot be empty</i>'
           showError(input, error, icon)
           showEmailError()
-          return false;
+          return false
+     } else if(!emailFormat.test(input.value)){
+          errorEmail.innerHTML = '<i>Looks like this is not an email</i>'
+          showError(input, error, icon)
+          showEmailError()
+          return false
      } else{
           hideError(input, error, icon)
           hideEmailError()
-          return true;
+          return true
      }
 }
 
